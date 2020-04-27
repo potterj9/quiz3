@@ -1,0 +1,135 @@
+/* Author: Jerod Potter */
+
+/* Version: Quiz3 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+:root {
+    --font-family: 'Roboto';
+    --main-color: #05a081;
+    --text-color: #fff;
+    --bg-color: #eee;
+    --bg-color-2: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    background: transparent !important;
+    position: absolute;
+    display: inline-block;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: .4em;
+    
+
+    
+
+}
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a {
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none !important;
+    color:var(--text-color) !important;
+
+    
+}
+
+
+.banner {
+    background-image: url(../images/background.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* custom css */
+
+.margin {
+    padding: 4em 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.bg-color {
+    background-color: var(--bg-color-2);
+    overflow: hidden;
+}
+
+main {
+    background: var(--bg-color);
+}
+
+.sideleft {
+    width: 30%;
+    
+
+    display: flex;
+
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    
+}
+
+.sideright {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    
+
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: var(--text-color) !important;
+    padding: 1em 2em;
+}
+
+.box {
+    width: 33%;
+    float: left;
+    padding: 2em;
+    text-align: center;
+    color:var(--text-color);
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+.box .fas{
+    font-size: 30px;
+}
+footer{
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+}
